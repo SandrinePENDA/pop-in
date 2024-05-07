@@ -1,16 +1,11 @@
-// This checks wether the screen's size is a mobile or not
-/*
-function displayPopIn() {
-    if (window.innerWidth < 631) {
-         mobileImg.style.display = "block";
-    } else {
-        desktopImg.style.display = "block";
-    }
-}
-displayPopIn();
-*/
-//console.log(openPopin);
+// Triggering pop-in and its overlay
 openPopin.addEventListener("click", () => {
     main.style.display = "block";
     body.classList.add("popin__overlay");
+});
+
+//Closing the pop-in
+closePopin.addEventListener("click", () => {
+    main.style.display = "none";
+    body.classList.remove("popin__overlay");
 })
