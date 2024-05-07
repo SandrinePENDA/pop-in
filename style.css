@@ -15,31 +15,13 @@
     --bright: #FFFFFF;
 }
 
-body {
-    /* background-color: #a9f8e775; */
-}
-
 a {
     text-decoration: none;
     color: var(--main-color);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .popin__overlay {
-    /* top: 50%;
-    left: 50%;
-    right: 0;
-    bottom: 0; */
-    /* width: 100%;
-    height: 100vh; */
     background-color: #0a0a0a80;
-    
-    /* position: fixed;
-    z-index: -98;     */
 }
 
 #main {
@@ -72,7 +54,6 @@ img {
 
 /* THE POP-IN WITH ALL ITS ELEMENTS */
 main {
-    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,6 +63,8 @@ main {
     max-width: 759px;
     width: 100%;
     height: 535px;
+
+    display: flex;   
 }
 
 .popin__content-image {
@@ -110,10 +93,6 @@ main {
     right: -4px;
 }
 
-.popin__content {
-    display: flex;   
-}
-
 .popin__content-texts {
     text-align: left;
     margin: 101px 0 115px 56px;    
@@ -127,7 +106,6 @@ main {
     opacity: 1;
     text-transform: uppercase;   
 }
-
 .popin__content-hesitate div.hesitate-line {
     width: 70px;
     height: 2px;
@@ -151,7 +129,7 @@ main {
     font-weight: 400;
  }
 
- /* The CTA in the content */
+ /* The CTA */
  .cta {
     margin-top: 31px;
 
@@ -201,6 +179,7 @@ main {
         justify-content: center;
     }
 }
+
 /* Mobile screens */
 @media (max-width: 630.8px) {
     #desktopImg {
@@ -220,7 +199,7 @@ main {
     .popin__content {
         flex-direction: column;
 
-        width: 375px;
+        max-width: 100vw;
         height: 458px;
 
         position: fixed;
@@ -232,6 +211,7 @@ main {
     }
     .popin__content-image img#mobileImg {
         width: 100%;
+        height: 183px;
     }
 
     .popin__content-texts {
@@ -267,11 +247,9 @@ main {
     .cta {
         justify-content: center;
     }
-
     .cta a {
         font-size: 16px;
         line-height: 25px;
-        /* padding: 15px 98px 15px 99px; */
         border: none;
         background-color: var(--main-color);
         color: var(--bright);
