@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Intégration d'une pop-in en HTML, CSS, JavaScript, par Sandrine N. PENDA</title>
+</head>
+
+<body id="body">
+    <!-- The button that triggers the pop-in -->
+    <div class="btn-popin-center">
+        <button id="openPopin">Cliquez-moi</button>
+    </div>
+
+    <!-- Pop-in box and its content -->
+    <main class="popin__container" id="main">
+        <div id="popinBox" class="popin__content">
+            <!-- Product image -->
+            <div class="popin__content-image">
+                <!-- Image for desktop -->
+                <img src="/images/img_desktop.jpg" id="desktopImg" alt="Image d'un poêle Aäsgard allumé" loading="lazy"
+                    title="Image d'un poêle Aäsgard allumé">
+                <!-- Vertical orange line - top left -->
+                <div class="vertical-line vertical-line-top"></div>
+                <!-- Image for mobile -->
+                <img src="/images/img_mobile.jpg" id="mobileImg" alt="Image d'un poêle Aäsgard allumé" loading="lazy"
+                    title="Image d'un poêle Aäsgard allumé" width="375px" height="183">
+                <!-- Vertical orange line - bottom right -->
+                <div class="vertical-line vertical-line-down"></div>
+            </div>
+
+            <!-- RDV Texts -->
+            <div class="popin__content-texts">
+                <div class="popin__content-hesitate">
+                    <p class="hesitate-text on-mobile">Vous hésitez ?</p>
+                    <div class="hesitate-line on-mobile m-top-down"></div>
+                </div>
+
+                <p class="store m-top-down">Prenez rendez-vous <br> en magasin !</p>
+
+                <p class="advisors m-top-down">Nos conseillers vous guideront dans votre projet</p>
+
+                <!-- CTA to book an appointment -->
+                <div class="cta">
+                    <a href="#" title="Je prends rdv dans le magasin Aäsgard le plus près de chez moi.">
+                        je prends rdv
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cross to close the pop-in -->
+            <div id="closePopin" title="Cliquer pour fermer"></div>
+        </div>
+    </main>
+
+    <!-- My own JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
