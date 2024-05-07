@@ -258,14 +258,15 @@ main {
 
     #closePopin::before {
         content: "\2715";
+        font-size: 32px;
         background-color: var(--secondary-color);
         opacity: 0.3;
         color: var(--bright);
-        padding: 8px;        
+        padding: 5px 10px;        
     
         position: absolute;
         right: -7px;
-        top: -7px;
+        top: -8px;
 
         cursor: pointer;
      }
