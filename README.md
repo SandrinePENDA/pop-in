@@ -1,2 +1,2 @@
 # pop-in
-A responsiveand dynamic pop-in built using HTML5, CSS3, JavaScript. No framework used.
+A responsive and dynamic pop-in built from scratch, by using HTML5, CSS3, JavaScript. No frameworks.
