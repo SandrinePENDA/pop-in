@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("btn-swipe.css"); 
 
 /*** GENERAL SETTINGS ***/
 * {
@@ -20,12 +21,23 @@ a {
     color: var(--main-color);
 }
 
+body {
+    background-color: #CBDBF0;
+}
+
 .popin__overlay {
     background-color: #0a0a0a80;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
 }
 
 #main {
-    display: none;
+    margin-left: -200%;
+    transition: 1s;
 }
 
 .m-top-down {
@@ -33,24 +45,6 @@ a {
 }
 /*** END GENERAL SETTINGS ***/
 
-/* BUTTON THAT OPENS THE POP-IN */
-.btn-popin-center {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-}
-#openPopin {
-    background-color: rgb(0, 111, 255);
-    border: none;
-    outline: 0;
-    padding: 11px 16px;
-    color: aliceblue;
-    border-radius: 8px;
-    margin-bottom: 30px;
-
-    cursor: pointer;
-}
-/* END BUTTON THAT OPENS THE POP-IN */
 
 /* THE POP-IN WITH ALL ITS ELEMENTS */
 main {

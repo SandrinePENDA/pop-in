@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@0,500;1,500&display=swap');
+
+/* THE BUTTON THAT OPENS THE POP-IN */
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+button {
+    background-color: transparent;
+    padding: 11px 16px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: "Roboto Condensed", sans-serif;
+    border: 2px solid #006FFF;
+    border-radius: 5px;
+    outline: none;
+    color: #0A0A0A;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all .35s;
+    text-transform: capitalize;
+
+    cursor: pointer;
+}
+
+button span {
+    position: relative;
+    z-index: 2;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    background: #006FFF;  
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 2px;
+    transition: all .35s;
+}
+
+button:hover {
+    color: #fff;
+}
+button:hover::after {
+    width: 100%;
+}
+/* END OF THE BUTTON THAT OPENS THE POP-IN */

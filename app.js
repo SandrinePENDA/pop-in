@@ -1,6 +1,6 @@
-// Triggering pop-in and its overlay
+// Triggering the pop-in and its overlay
 openPopin.addEventListener("click", () => {
-    main.style.display = "block";
+    main.style.marginLeft = "0";
     body.classList.add("popin__overlay");
 });
 
